@@ -1,0 +1,15 @@
+.todo-container{
+    width: auto;
+    height: 87vh;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.todo-content{
+    width: 35%;
+    height: 80vh;
+    border: 1px solid black;
+}
+

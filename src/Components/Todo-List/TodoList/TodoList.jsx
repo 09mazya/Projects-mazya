@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './TodoList.css'
 function TodoList({ todo, setTodo }) {
 	const [edit, setEdit] = useState(null);
 	const [value, setValue] = useState("");
@@ -29,6 +30,7 @@ function TodoList({ todo, setTodo }) {
 		setTodo(newTodo);
 		setEdit(null);
 	}
+	console.log(todo);
 	return (
 		<div>
 			{todo.map((item) => (
@@ -38,6 +40,7 @@ function TodoList({ todo, setTodo }) {
 							<input
 								value={value}
 								onChange={(e) => setValue(e.target.value)}
+								className="TodoList-input"
 							/>
 						</div>
 					) : (
@@ -61,7 +64,7 @@ function TodoList({ todo, setTodo }) {
 								Редактировать
 							</button>
 							<button onClick={() => statusTodo(item.id)}>
-								Закрыть / Открыть
+								{ item.status ? (<span >Закрыть</span>) : (<span>Открыть</span>)}
 							</button>
 						</div>
 					)}

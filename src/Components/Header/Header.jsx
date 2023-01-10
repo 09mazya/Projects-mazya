@@ -1,11 +1,12 @@
 import React from "react";
-import './Header.css'
+import "./Header.css";
 function Header() {
-    return (
-        <div className="headerHat">
-            <div>My PET projects</div>
-            <div></div>
-        </div>
-    )
-};
+	return (
+		<section className="headerContainer">
+			<div>My PET projects</div>
+			<div>Todo-List</div>
+			<div>Quiz</div>
+		</section>
+	);
+}
 export default Header;

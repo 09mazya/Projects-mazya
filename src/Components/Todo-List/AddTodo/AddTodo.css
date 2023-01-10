@@ -1,0 +1,19 @@
+.Add-style-input{
+    height: 12vh;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.AddTodo-input{
+    width: 70%;
+    height: 5vh;
+}
+.Add-style-input input{
+    border: 1px solid  red;
+    font-size: 25px;
+}
+.AddTodo-button{
+    width: 20%;
+    height: 6vh;
+}
